@@ -1,0 +1,45 @@
+
+/* Class = "NSMenuItem"; title = "multilingual"; ObjectID = "1Xt-HY-uBw"; */
+"1Xt-HY-uBw.title" = "multilingual";
+
+/* Class = "NSMenuItem"; title = "Quit multilingual"; ObjectID = "4sb-4s-VLi"; */
+"4sb-4s-VLi.title" = "Quit multilingual";
+
+/* Class = "NSMenuItem"; title = "Edit"; ObjectID = "5QF-Oa-p0T"; */
+"5QF-Oa-p0T.title" = "Edit";
+
+/* Class = "NSMenuItem"; title = "About multilingual"; ObjectID = "5kV-Vb-QxS"; */
+"5kV-Vb-QxS.title" = "About multilingual";
+
+/* Class = "NSMenu"; title = "Main Menu"; ObjectID = "AYu-sK-qS6"; */
+"AYu-sK-qS6.title" = "Main Menu";
+
+/* Class = "NSTextFieldCell"; title = "测试文本"; ObjectID = "BNa-7K-2X7"; */
+"BNa-7K-2X7.title" = "测试文本";
+
+/* Class = "NSMenuItem"; title = "Preferences…"; ObjectID = "BOF-NM-1cW"; */
+"BOF-NM-1cW.title" = "Preferences…";
+
+/* Class = "NSWindow"; title = "Window"; ObjectID = "IQv-IB-iLA"; */
+"IQv-IB-iLA.title" = "Window";
+
+/* Class = "NSMenuItem"; title = "日语"; ObjectID = "Lqv-92-xau"; */
+"Lqv-92-xau.title" = "日语";
+
+/* Class = "NSMenuItem"; title = "English"; ObjectID = "Ze6-4K-aix"; */
+"Ze6-4K-aix.title" = "English";
+
+/* Class = "NSMenu"; title = "language"; ObjectID = "bib-Uj-vzu"; */
+"bib-Uj-vzu.title" = "language";
+
+/* Class = "NSMenuItem"; title = "language"; ObjectID = "dMs-cI-mzQ"; */
+"dMs-cI-mzQ.title" = "language";
+
+/* Class = "NSMenuItem"; title = "Format"; ObjectID = "jxT-CU-nIS"; */
+"jxT-CU-nIS.title" = "Format";
+
+/* Class = "NSMenuItem"; title = "简体中文"; ObjectID = "qSO-8Y-3jb"; */
+"qSO-8Y-3jb.title" = "简体中文";
+
+/* Class = "NSMenu"; title = "multilingual"; ObjectID = "uQy-DD-JDr"; */
+"uQy-DD-JDr.title" = "multilingual";

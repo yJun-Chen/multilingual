@@ -1,0 +1,12 @@
+/* 
+  InfoPlist.strings
+  multilingual
+
+  Created by 陈永军 on 2020/12/28.
+  
+*/
+CFBundleName = "多语言演示";
+CFBundleDisplayName = "多语言演示";
+
+"Test text" = "测试文本";
+

@@ -1,0 +1,14 @@
+/* 
+  InfoPlist.strings
+  multilingual
+
+  Created by 陈永军 on 2020/12/28.
+  
+*/
+
+//菜单栏 App 名称本地化
+CFBundleName = "Multilingual presentation";
+//Dock 栏和 Finder 中 App 名称本地化
+CFBundleDisplayName = "Multilingual presentation";
+
+"Test text" = "Test text";
