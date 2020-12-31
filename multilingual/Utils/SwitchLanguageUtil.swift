@@ -11,7 +11,7 @@ class SwitchLanguageUtil:NSObject{
     static var bundle:Bundle? = nil
     static let LocalLanguageKey:String = "\(Bundle.main.infoDictionary!["CFBundleIdentifier"] as! String).SwitchLanguageService";
     
-    static func getCurrentLanguage() -> String{
+    static var getCurrentLanguage:String{
         let def = UserDefaults.standard
         var currentLanguage = def.value(forKey: LocalLanguageKey) as? String
         if (currentLanguage == nil){
@@ -27,32 +27,14 @@ class SwitchLanguageUtil:NSObject{
             }else if(currentLanguage!.hasPrefix("zh")){
                 currentLanguage = "zh-Hans"
             }else{
-                currentLanguage = "English"
+                currentLanguage = "en"
             }
         }
-        return currentLanguage ?? "English"
+        return currentLanguage ?? "en"
     }
     
     static func initUserLanguage(){
-        let def = UserDefaults.standard
-        var currentLanguage = def.value(forKey: LocalLanguageKey) as? String
-        if (currentLanguage == nil){
-            let language = NSLocale.preferredLanguages
-            currentLanguage = language[0]
-            if (currentLanguage!.hasPrefix("en")){
-                currentLanguage = "en"
-            }else if(currentLanguage!.hasPrefix("ja")){
-                currentLanguage = "ja"
-            }else if(currentLanguage!.hasPrefix("es")){
-                currentLanguage = "es"
-            }else if(currentLanguage!.hasPrefix("zh")){
-                currentLanguage = "zh-Hans"
-            }else{
-                currentLanguage = "en"
-            }
-            def.setValue(currentLanguage, forKey: LocalLanguageKey)
-            def.synchronize()
-        }
+        let currentLanguage = getCurrentLanguage
         let path = Bundle.main.path(forResource: currentLanguage, ofType: "lproj")
         bundle = Bundle.init(path: path!)
     }
@@ -73,7 +55,7 @@ class SwitchLanguageUtil:NSObject{
         if (SwitchLanguageUtil.bundle == nil){
             SwitchLanguageUtil.initUserLanguage()
         }
-        return SwitchLanguageUtil.bundle?.localizedString(forKey:str, value: nil, table: "InfoPlist") ?? str
+        return SwitchLanguageUtil.bundle?.localizedString(forKey:str, value: str, table: "InfoPlist") ?? str
     }
     
     static func changeLanguage(language:String){

@@ -15,6 +15,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     
     func applicationDidFinishLaunching(_ aNotification: Notification) {
         // Insert code here to initialize your application
+        changeLanguageState()
         
     }
 
@@ -41,6 +42,22 @@ class AppDelegate: NSObject, NSApplicationDelegate {
                     break;
             }
             pub.state = NSControl.StateValue.on
+        }
+    }
+    
+    func changeLanguageState(){
+        let currentLanguage = SwitchLanguageUtil.getCurrentLanguage
+        print("更改当前语言:\(currentLanguage)")
+        let menu = NSApplication.shared.mainMenu?.items[1]
+        switch currentLanguage {
+        case "zh-Hans":
+            menu?.submenu?.items[0].state = NSControl.StateValue.on
+        case "ja":
+            menu?.submenu?.items[1].state = NSControl.StateValue.on
+        case "en":
+            menu?.submenu?.items[2].state = NSControl.StateValue.on
+        default:
+            break;
         }
     }
     
